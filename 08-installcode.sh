@@ -12,4 +12,4 @@ else
 echo "you are a root user"
 fi
 
-yum install git -y
+yum install mysql -y

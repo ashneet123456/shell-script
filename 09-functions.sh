@@ -1,5 +1,9 @@
 #!/bin/bash
 USERID=$(id -u)
+DATE=$(date +%F-%H-%M-%S)
+SCRIPTNAME=$0
+LOGFILE=/tmp$SCRIPTNAME-$DATE.log
+
 #this function should validate previous commad 
 VALIDATE(){
  if [ $1 -ne 0 ]
@@ -20,10 +24,10 @@ else
 echo "you are a root user"
 fi
 
-yum install mysql -y
+yum install mysql -y &>>$LOGFILE
 VALIDATE $? "Installing mysql"
 
 
-yum install postfix -y
+yum install postfix -y &>>$LOGFILE
 
 VALIDATE $? "Installing postfix"

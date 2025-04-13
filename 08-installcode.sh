@@ -20,3 +20,13 @@ exit 1
 else 
 echo "installtion is succesful"
 fi
+
+yum install postfix -y
+
+if [ $? -ne 0 ]
+then 
+echo "installtion is failure"
+exit 1
+else 
+echo "installtion is succesfull"
+fi

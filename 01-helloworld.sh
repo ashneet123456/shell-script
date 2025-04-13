@@ -1,6 +1,8 @@
 #!/bin/bash
-echo "Hello world, I am lerning Devops with Aws"
+echo "Hello world, I am learning Devops with Aws"
+PERSON1=Ramesh
+PERSON2=Suresh
 
-echo "Ramesh:Hi suresh ,GOOd morning"
-echo "suresh:Good morning ramesh"
-echo "Ramesh:Hi suresh , i am good how are you"
+echo "$PERSON1:Hi $PERSON2 ,GOOd morning"
+echo "$PERSON2:Good morning $PERSON1"
+echo "$PERSON1:Hi $PERSON2 , i am good how are you"

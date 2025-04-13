@@ -2,7 +2,7 @@
 USERID=$(id -u)
 DATE=$(date +%F)
 SCRIPTNAME=$0
-LOGFILE=/tmp$SCRIPTNAME-$DATE.log
+LOGFILE=/tmp/$SCRIPTNAME-$DATE.log
 
 #this function should validate previous commad 
 VALIDATE(){

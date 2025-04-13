@@ -1,9 +1,10 @@
 #!/bin/bash
-echo "Please enter your Username"
-read USERNAME # this is the variabble where the value of the user is enterd
-echo "USERNAME entered is $USERNAME
+echo "Please enter your username"
+read USERNAME
 
-echo "Please enter your Password"
- read PASSWORD 
+echo "Username enterd is $USERNAME"
 
- echo "password enterd is :$PASSWORD"
+echo "Plaese enter your password"
+read PASSWORD
+
+echo "The password entered by user is $PASSWORD"
